@@ -6,18 +6,6 @@
   const navLinks = document.querySelectorAll('.header__nav-link');
   const header = document.getElementById('header');
 
-  const sections = [
-    { id: 'home', el: document.getElementById('home') },
-    { id: 'features', el: document.getElementById('features') },
-    { id: 'business', el: document.getElementById('business') },
-    { id: 'privacy', el: document.getElementById('privacy') },
-    { id: 'terms', el: document.getElementById('terms') },
-    { id: 'support', el: document.getElementById('support') },
-    { id: 'contact', el: document.getElementById('contact') },
-  ].filter(function (s) {
-    return s.el;
-  });
-
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function closeMobileNav() {
@@ -40,21 +28,9 @@
     }
   });
 
-  function activateNavLink(id) {
-    navLinks.forEach(function (link) {
-      const href = link.getAttribute('href');
-      const linkId = href ? href.replace('#', '') : '';
-      link.classList.toggle('header__nav-link--active', linkId === id);
-    });
-  }
-
   navLinks.forEach(function (link) {
     link.addEventListener('click', function () {
       closeMobileNav();
-      const href = link.getAttribute('href');
-      if (href && href.charAt(0) === '#') {
-        activateNavLink(href.slice(1));
-      }
     });
   });
 
@@ -74,24 +50,8 @@
     }
   });
 
-  function setActiveNav() {
-    const scrollPos = window.scrollY + header.offsetHeight + 80;
-    let current = 'home';
-    let maxOffset = -1;
-
-    sections.forEach(function (section) {
-      if (section.el && section.el.offsetTop <= scrollPos && section.el.offsetTop >= maxOffset) {
-        maxOffset = section.el.offsetTop;
-        current = section.id;
-      }
-    });
-
-    activateNavLink(current);
-  }
-
   function updateHeaderOnScroll() {
     header.classList.toggle('header--scrolled', window.scrollY > 12);
-    setActiveNav();
   }
 
   let ticking = false;

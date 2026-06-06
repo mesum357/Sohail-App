@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UBUX support — get help with your account, rewards, technical issues, and frequently asked questions.">
+  <title>Support — UBUX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="UBUX Home">
+        <img src="assets/images/logo-header.png" alt="UBUX" width="240" height="84">
+      </a>
+
+      <button class="header__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+
+      <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="features.html" class="header__nav-link">Features</a></li>
+          <li><a href="business.html" class="header__nav-link">For Business</a></li>
+          <li><a href="support.html" class="header__nav-link header__nav-link--current" aria-current="page">Support</a></li>
+          <li><a href="privacy.html" class="header__nav-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="header__nav-link">Terms of Service</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="features-page-hero">
+      <div class="container">
+        <p class="section-label reveal">SUPPORT</p>
+        <h1 class="features-page-hero__title reveal">We're here to help.</h1>
+        <p class="features-page-hero__subtitle reveal">
+          If you need assistance with your account, rewards, or technical issues, please contact
+          our support team. We aim to respond to enquiries within two business days.
+        </p>
+      </div>
+    </section>
+
+    <section class="support-page">
+      <div class="container">
+        <div class="support-page__cards" data-reveal-stagger="80">
+          <article class="contact-card contact-card--support reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h2 class="contact-card__title">Customer Service</h2>
+            <a href="mailto:info@ubux.app" class="contact-card__email">info@ubux.app</a>
+          </article>
+
+          <article class="contact-card contact-card--support reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+              </svg>
+            </div>
+            <h2 class="contact-card__title">Technical Support</h2>
+            <a href="mailto:support@ubux.app" class="contact-card__email">support@ubux.app</a>
+          </article>
+        </div>
+
+        <div class="faq" id="faq">
+          <h2 class="faq__title reveal">Frequently asked questions</h2>
+          <div class="faq__list" data-reveal-stagger="60">
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                How do I create an account?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>Download the UBUX app from the App Store or Google Play, tap Sign Up, and follow the prompts to register with your email address or mobile number. You'll receive a verification code to complete setup.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                I am a business and want to register with UBUX?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>Visit our <a href="business.html">For Business</a> page to learn how UBUX works for merchants, then contact us at <a href="mailto:info@ubux.app">info@ubux.app</a> to get started. Our team will guide you through onboarding at no cost.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                As a seller, do I need any other system?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>No additional loyalty system is required. UBUX integrates with your existing point-of-sale workflow — customers simply scan a QR code or provide their account details at checkout to earn or redeem rewards.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                How do I earn rewards?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>Earn rewards automatically when you make eligible purchases at participating businesses. Present your UBUX account at checkout or scan the merchant's QR code — points are credited to your account shortly after your transaction.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                How do I redeem rewards?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>Open the UBUX app, view your available rewards balance, and select Redeem at a participating business. Show your redemption code or scan at checkout to apply your reward to your purchase.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                I forgot my password.
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>On the login screen, tap Forgot Password and enter the email address linked to your account. We'll send you a secure link to reset your password. If you need further help, email <a href="mailto:support@ubux.app">support@ubux.app</a>.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                How do I update my account details?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>Go to Profile in the UBUX app to update your name, email, phone number, and notification preferences. Changes to your email address may require re-verification for security purposes.</p>
+              </div>
+            </details>
+
+            <details class="faq__item reveal">
+              <summary class="faq__question">
+                I need additional help.
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__answer">
+                <p>If your question isn't answered here, reach out to our team at <a href="mailto:support@ubux.app">support@ubux.app</a> or visit our <a href="contact.html">Contact</a> page for other enquiry types. We aim to respond within two business days.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--light">
+    <div class="container footer__inner footer__inner--page">
+      <div class="footer__brand reveal reveal--left">
+        <a href="index.html" class="footer__logo" aria-label="UBUX Home">
+          <img src="assets/images/logo-header.png" alt="UBUX" width="200" height="88">
+        </a>
+        <p class="footer__tagline">Rewards that work for you. Earn and redeem with participating businesses.</p>
+      </div>
+
+      <div class="footer__columns footer__columns--page" data-reveal-stagger="80">
+        <div class="footer__col reveal">
+          <h4 class="footer__col-title">COMPANY</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="business.html">For Business</a></li>
+          </ul>
+        </div>
+        <div class="footer__col reveal">
+          <h4 class="footer__col-title">LEGAL</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer__col reveal">
+          <h4 class="footer__col-title">SUPPORT</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom footer__bottom--split">
+      <div class="container footer__bottom-inner">
+        <p class="reveal">&copy; 2024 UBUX Pty Ltd. All rights reserved.</p>
+        <p class="reveal footer__credit">Made with care for local businesses.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

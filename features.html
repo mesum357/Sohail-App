@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore UBUX features — earn rewards, redeem with ease, discover businesses, and track your activity in one secure app.">
+  <title>Features — UBUX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="UBUX Home">
+        <img src="assets/images/logo-header.png" alt="UBUX" width="240" height="84">
+      </a>
+
+      <button class="header__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+
+      <nav class="header__nav" id="mainNav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="features.html" class="header__nav-link header__nav-link--current" aria-current="page">Features</a></li>
+          <li><a href="business.html" class="header__nav-link">For Business</a></li>
+          <li><a href="support.html" class="header__nav-link">Support</a></li>
+          <li><a href="privacy.html" class="header__nav-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="header__nav-link">Terms of Service</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="features-page-hero">
+      <div class="container">
+        <p class="section-label reveal">FEATURES</p>
+        <h1 class="features-page-hero__title reveal">A simple, secure rewards experience</h1>
+        <p class="features-page-hero__subtitle reveal">
+          UBUX is a rewards platform that helps customers earn and redeem rewards from
+          participating businesses through a simple and secure mobile experience.
+        </p>
+      </div>
+    </section>
+
+    <section class="features-page">
+      <div class="container">
+        <div class="features-page__grid" data-reveal-stagger="100">
+          <article class="feature-card feature-card--page reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="20 12 20 22 4 22 4 12"/>
+                <rect x="2" y="7" width="20" height="5"/>
+                <line x1="12" y1="22" x2="12" y2="7"/>
+                <path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/>
+                <path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
+              </svg>
+            </div>
+            <h2 class="feature-card__title">Earn Rewards</h2>
+            <p class="feature-card__text">Receive rewards from participating businesses when making eligible purchases.</p>
+          </article>
+
+          <article class="feature-card feature-card--page reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/>
+                <line x1="7" y1="7" x2="7.01" y2="7"/>
+              </svg>
+            </div>
+            <h2 class="feature-card__title">Redeem with Ease</h2>
+            <p class="feature-card__text">Use your rewards directly through the UBUX app, no extra steps required.</p>
+          </article>
+
+          <article class="feature-card feature-card--page reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h2 class="feature-card__title">Discover Businesses</h2>
+            <p class="feature-card__text">Find participating businesses near you and explore available offers.</p>
+          </article>
+
+          <article class="feature-card feature-card--page reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h2 class="feature-card__title">Track Your Activity</h2>
+            <p class="feature-card__text">View your rewards history, balances and account activity all in one place.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--light">
+    <div class="container footer__inner footer__inner--page">
+      <div class="footer__brand reveal reveal--left">
+        <a href="index.html" class="footer__logo" aria-label="UBUX Home">
+          <img src="assets/images/logo-header.png" alt="UBUX" width="200" height="88">
+        </a>
+        <p class="footer__tagline">Rewards that work for you. Earn and redeem with participating businesses.</p>
+      </div>
+
+      <div class="footer__columns footer__columns--page" data-reveal-stagger="80">
+        <div class="footer__col reveal">
+          <h4 class="footer__col-title">COMPANY</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="business.html">For Business</a></li>
+          </ul>
+        </div>
+        <div class="footer__col reveal">
+          <h4 class="footer__col-title">LEGAL</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer__col reveal">
+          <h4 class="footer__col-title">SUPPORT</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom footer__bottom--split">
+      <div class="container footer__bottom-inner">
+        <p class="reveal">&copy; 2024 UBUX Pty Ltd. All rights reserved.</p>
+        <p class="reveal footer__credit">Made with care for local businesses.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

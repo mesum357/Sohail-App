@@ -200,7 +200,7 @@ ul { list-style: none; }
    Hero
    ============================================ */
 .hero {
-  padding: calc(var(--header-height) + 64px) 0 80px;
+  padding: var(--header-height) 0 80px;
   background: var(--ubux-bg);
   overflow: hidden;
 }

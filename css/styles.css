@@ -22,7 +22,7 @@
   --radius: 12px;
   --radius-lg: 20px;
   --transition: 200ms ease;
-  --header-height: 100px;
+  --header-height: 72px;
 }
 
 /* Reset */
@@ -122,7 +122,7 @@ ul { list-style: none; }
 }
 
 .header__logo img {
-  height:128px;
+  height: 128px;
   width: auto;
 }
 
@@ -159,7 +159,7 @@ ul { list-style: none; }
   font-weight: 500;
   color: var(--ubux-text-muted);
   position: relative;
-  padding: 8px 12px 14px;
+  padding: 6px 10px 10px;
   border-radius: 8px;
   transition: color var(--transition), background var(--transition);
   cursor: pointer;

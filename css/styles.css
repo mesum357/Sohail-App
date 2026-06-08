@@ -212,6 +212,10 @@ ul { list-style: none; }
   align-items: center;
 }
 
+.hero__content {
+  padding-top: 40px;
+}
+
 .hero__title {
   font-size: clamp(2.25rem, 4vw, 3.25rem);
   font-weight: 800;
@@ -331,11 +335,14 @@ ul { list-style: none; }
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-height: min(78vh, 580px);
+  overflow: hidden;
 }
 
 .hero__visual-img {
   width: 100%;
-  max-width: 540px;
+  max-width: 480px;
+  max-height: min(78vh, 580px);
   height: auto;
   object-fit: contain;
 }
@@ -1200,16 +1207,19 @@ ul { list-style: none; }
     gap: 48px;
   }
 
+  .hero__content {
+    padding-top: 32px;
+    text-align: center;
+  }
+
   .hero__visual {
     margin-top: 16px;
+    max-height: min(65vh, 480px);
   }
 
   .hero__visual-img {
-    max-width: 460px;
-  }
-
-  .hero__content {
-    text-align: center;
+    max-width: 400px;
+    max-height: min(65vh, 480px);
   }
 
   .hero__subtitle {
@@ -1359,8 +1369,17 @@ ul { list-style: none; }
     text-align: left;
   }
 
+  .hero__content {
+    padding-top: 24px;
+  }
+
+  .hero__visual {
+    max-height: min(55vh, 400px);
+  }
+
   .hero__visual-img {
-    max-width: 360px;
+    max-width: 340px;
+    max-height: min(55vh, 400px);
   }
 
   .business__inner {

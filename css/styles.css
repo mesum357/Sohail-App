@@ -122,7 +122,7 @@ ul { list-style: none; }
 }
 
 .header__logo img {
-  height: 150px;
+  height: 200px;
   width: auto;
 }
 
@@ -602,7 +602,7 @@ ul { list-style: none; }
 }
 
 .footer__logo img {
-  height: 150px;
+  height: 200px;
   width: auto;
   border-radius: 0;
 }
